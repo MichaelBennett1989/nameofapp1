@@ -1,0 +1,1 @@
+My name is Michael and I am a careerfoundry student learning about rails! When this app is done, it will be a cool ecommerce site!
