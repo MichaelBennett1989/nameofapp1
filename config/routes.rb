@@ -6,7 +6,9 @@ Rails.application.routes.draw do
 
   get 'static_pages/index'
 
-  get 'static_pages/landing_page'
+  get 'static_pages/landing_pages'
+
+  resources :orders, only: [:index, :show, :create, :destroy]
   
-  root 'static_pages#landing_page'
+  root 'static_pages#landing_pages'
 end
