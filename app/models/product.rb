@@ -1,2 +1,4 @@
-class Product < ActiveRecord::Base
+
+class Product < ApplicationRecord
+  has_many :orders
 end
