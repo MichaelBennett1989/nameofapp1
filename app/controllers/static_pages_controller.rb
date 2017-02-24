@@ -3,6 +3,6 @@ class StaticPagesController < ApplicationController
   end
 
   def landing_pages
-    @featured_product = Product.first
+    @products = Product.limit(3)
   end
 end
