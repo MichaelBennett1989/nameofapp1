@@ -27,16 +27,22 @@
             <span class="icon-bar"></span>
           </button>
           <div class="projectname navbar-brand" id=Bike_Berlin>
-            <a href="#" id="Bike_Berlin">Bike Berlin</a>
+            <a href="http://localhost:3000/static_pages/landing_pages" id="Bike_Berlin">Bike Berlin</a>
           </div><!-- end of project name-->
         </nav>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#index">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="http://localhost:3000/static_pages/landing_pages">Home</a></li>
+            <li><a href="http://localhost:3000/static_pages/about">About</a></li>
+            <li><a href="http://localhost:3000/products">Products</a></li>
+            <li><a href="http://localhost:3000/static_pages/contact">Contact</a></li>
           </ul>
+
+          <%= form_tag("/products", method: "get") do %>
+            <%= label_tag(:q, "Search for:") %>
+            <%= text_field_tag(:q) %>
+            <%= submit_tag("Search") %>
+          <% end %> 
         </div> 
       </div>
     </nav>
